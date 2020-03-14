@@ -29,10 +29,15 @@ with open("train_data.csv",'r', encoding="utf-8") as input:
         a[row["公司"]].append(y+'-'+m+'-'+d)
 print(a["盛运环保"])
 for name in a.keys():
-    a[name].reverse()
+    a[name] = dict(collections.Counter(a[name]))
 print(a["盛运环保"])
-with open("result.csv",'w',encoding='utf-8') as out:
-    f = ['公司','开始','结束']
-    out.write("{},{},{}\n".format(f[0],f[1],f[2]))
+with open("ChineseCompany_1.csv",'w',encoding='utf-8') as out:
+    f = ['company','time and fequency']
+    out.write("{},{}\n".format(f[0],f[1]))
     for name in a.keys():
-        out.write("{},{},{}\n".format(name, a[name][0], a[name][-1]))
+        temp = []
+        for k,v in a[name].items():
+            if v >= 2:
+                temp.append(tuple([k,v]))
+        sorted(temp,key=lambda x: x[0])
+        out.write("{},{}\n".format(name, temp))
