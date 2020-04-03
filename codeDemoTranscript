@@ -1,10 +1,29 @@
 overview:
 
 
+
 data collection:
 
 
+For the news data part(这是为什么我们根据新闻数据来搜集股票数据):
+It is harder to target a financial news dataset of Chinese than that of English, also Collectings 
+stock price data is easier than finding financial news data. We put a focus on finding the proper
+Chniese financial news dataset.  
+
+
 data cleaning:
+
+
+We have filtered the news data since we want to have more information for each date point to do 
+a better prediction. We take a date into acount when it has more than 2 news for the same
+company on that day. For company, the company has more than 1 valid date point will be considered 
+as valid company.  
+
+(run the scripts of extraction)
+
+This process produce 2 files. The ChineseCompany_2.csv provides information for collecting Stock 
+price. It tells the company and related time series of which the stock price should be collected.
+Another file /data/traindata(ch).csv is the filtered training data.
 
 
 time series model:
