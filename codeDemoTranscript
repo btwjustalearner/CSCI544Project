@@ -76,7 +76,8 @@ We keep a (company, date) pair only if the frequency is higher than 2.
 Now we have the news data and ground truth. How do we gather them together?
 
 (time series)
-We tried several time series models and since our main model is NLP we balanced efficiency and accuracy.
+We tried several time series models and since our main model is NLP we balanced efficiency and accuracy
+in this step.
 
 (time series production)
 ARIMA is a widely used and fast model. To gather ground truth for each record in traindata, we pick the  
@@ -87,7 +88,7 @@ so we won't run it now. Here is the result.
 We are experimenting different ways to combine the two models, including linear combination, multilabel
 classification, etc. And we are going to talk about them later
 
-Let's talk about the main NLP part.
+Let's move to the main NLP part.
 
 
 
