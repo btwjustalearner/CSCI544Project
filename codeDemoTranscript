@@ -1,17 +1,8 @@
 overview:
-Research has been done to better understand the stock market and conduct predictions on it. 
-Time series models have been used for centuries but it alone usually can not provide a good 
-forecasting of the stock prices trend. We want to take advantage of financial news which 
-can bring additional information on market trends. We plan to use the state-of-art NLP 
-technology to extract the event inside the news text and measure the impact of this event 
-on the related company’s stock. This impact will be stacked with the current time series model.
-
-
-
-
+In this project we are trying to stack the insights given by finance news and time series forecasts.
+Let's see what interesting result we would get from this NLP+traditional statistics model.
 
 data collection:
-
 
 For the news data part(这是为什么我们根据新闻数据来搜集股票数据):
 It is harder to target a financial news dataset of Chinese than that of English, also Collectings 
@@ -24,6 +15,9 @@ date, code, company, title and text. The English corpus has 1 million records on
 Apple, Google and Facebook) with publish date, title and text. English corpus is much larger than Chinese.
 We took a sample from English corpus to deal with this problem. There are more companies in Chinese corpuus
 but it shouldn't have too big impact since each record is a (company, date) pair rather than company itself.
+
+Stock data:
+
 
 
 data cleaning:
@@ -43,6 +37,11 @@ Another file /data/traindata(ch).csv is the filtered training data.
 
 time series model:
 Now we have the news data and ground truth. How do we gather them together?
+
+We are experimenting different ways to combine the two models, including linear combination, multilabel
+classification, etc.
+
+Let's talk about the main NLP part.
 
 
 
