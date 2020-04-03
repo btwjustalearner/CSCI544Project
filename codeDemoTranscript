@@ -62,10 +62,11 @@ We came up with this topic ourselves without any data in hand and we underestiim
 collecting data and processing them. Our datasets are massive with Chinese train and test finance news data,
 English news data and stock data. 
 
-We took a sample from English corpus to deal with the dataset size problem. And since 
-each record is a (company, date) pair rather than company itself, cmopany number shouldn't matter.
+We took a sample from English corpus to deal with the dataset size difference problem. And since 
+each record is a (company, date) pair rather than company itself, company number shouldn't matter too much.
 
-We put a focus on finding the proper Chniese finance news dataset. We'll demonstrate stock. data collecting later.
+We are going to focus on finding the proper Chinese finance news dataset today. 
+We'll demonstrate stock data collecting later.
 
 (cleaning)
 We first convert all the column names and date format to English.
