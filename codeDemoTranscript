@@ -52,6 +52,42 @@ classification, etc. And we are going to talk about them later
 
 Let's talk about the main NLP part.
 
+Final transcript for Yan:
+(proposal)
+In this project we are trying to stack the insights given by finance news and time series forecasts.
+Let's see what interesting result we would get from this NLP+traditional statistics model.
+
+(chinese raw train data)
+We came up with this topic ourselves without any data in hand and we underestiimated the difficulty of 
+collecting data and processing them. Our datasets are massive with Chinese train and test finance news data,
+English news data and stock data. 
+
+We took a sample from English corpus to deal with the dataset size problem. And since 
+each record is a (company, date) pair rather than company itself, cmopany number shouldn't matter.
+
+We put a focus on finding the proper Chniese finance news dataset. We'll demonstrate stock. data collecting later.
+
+(cleaning)
+We first convert all the column names and date format to English.
+We keep a (company, date) pair only if the frequency is higher than 2. 
+
+(train ch)
+Now we have the news data and ground truth. How do we gather them together?
+
+(time series)
+We tried several time series models and since our main model is NLP we balanced efficiency and accuracy.
+
+(time series production)
+ARIMA is a widely used and fast model. To gather ground truth for each record in traindata, we pick the  
+close price for the news date or the closest next date if the news date is a weekend. And the last close
+price. We pick the lastest 30 days and applied the model. It takes about 1 hour to inpute the whole traindata
+so we won't run it now. Here is the result.
+
+We are experimenting different ways to combine the two models, including linear combination, multilabel
+classification, etc. And we are going to talk about them later
+
+Let's talk about the main NLP part.
+
 
 
 
