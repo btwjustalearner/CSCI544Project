@@ -34,6 +34,9 @@ This process produce 2 files. The ChineseCompany_2.csv provides information for 
 price. It tells the company and related time series of which the stock price should be collected.
 Another file /data/traindata(ch).csv is the filtered training data.
 
+We changed the column names to English and convert the Chinese date format to date. We also removed irrelevant 
+columns.
+
 
 time series model:
 Now we have the news data and ground truth. How do we gather them together?
