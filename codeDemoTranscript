@@ -38,8 +38,14 @@ Another file /data/traindata(ch).csv is the filtered training data.
 time series model:
 Now we have the news data and ground truth. How do we gather them together?
 
+We tried several time series models and since our main model is NLP we balanced efficiency and accuracy.
+ARIMA is a widely used and fast model. To gather ground truth for each record in traindata, we pick the  
+close price for the news date or the closest next date if the news date is a weekend. And the last close
+price. We pick the lastest 30 days and applied the model. It takes about 1 hour to inpute the whole traindata
+so we won't run it now. Here is the result.
+
 We are experimenting different ways to combine the two models, including linear combination, multilabel
-classification, etc.
+classification, etc. And we are going to talk about them later
 
 Let's talk about the main NLP part.
 
