@@ -13,7 +13,6 @@ English news zip file: https://drive.google.com/file/d/1rD3AL7AYAHanqIO7G2Kgn9By
 4/7 meeting:
 
 Yan:
-
 Logistic regression baseline model
 traindata0401.csv 0/1 converting
 time series rerun
