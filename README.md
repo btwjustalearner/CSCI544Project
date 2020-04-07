@@ -17,6 +17,7 @@ Logistic regression baseline model
 traindata0401.csv 0/1 converting
 time series rerun
 data combination to new train/test datasets
+voting results combining
 
 Zhean:
 data cleaning and summary for Chinese/English train/test
