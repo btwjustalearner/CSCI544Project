@@ -7,3 +7,22 @@ Article selection: https://docs.google.com/document/d/1t1u2e_t6WTmYtB2iXcOHjl8KC
 Paper presentation slides: https://docs.google.com/presentation/d/1FTTzCuCzrpE6R6Btt-teqgcOB_pr-6bxHAlXCCdqfzA/edit#slide=id.p
 
 English news zip file: https://drive.google.com/file/d/1rD3AL7AYAHanqIO7G2Kgn9ByuQLBEHJR/view?usp=sharing
+
+
+
+4/7 meeting:
+Yan:
+Logistic regression baseline model
+traindata0401.csv 0/1 converting
+time series rerun
+data combination to new train/test datasets
+
+Zhean:
+data cleaning and summary for Chinese/English train/test
+
+Haomeng:
+Stock data collecting for Chinese/English train/test
+
+
+Keyu:
+new NLP models
