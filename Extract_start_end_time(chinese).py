@@ -120,12 +120,11 @@ def Filter_traindata():
                 else:
                     temp += char
             date = y+'-'+m+'-'+d
-            company = row["公司"]
-            if company in valid:
-                if date in valid[company]:
-                    row = dict(row)
-                    row["日期"] = date
-                    traindata.append(row)
+            row = dict(row)
+            row["日期"] = date
+            row["标题"] = row["标题"].replace("\n", " ")
+            row["正文"] = row["正文"].replace("\n", " ")
+            traindata.append(row)
     # print(traindata[0])
     
     outputpath = Path.cwd() / "data" / "traindata(ch).csv"
@@ -138,7 +137,53 @@ def Filter_traindata():
     print("done with filtering train data")
     print("train data count: {}\nunique company count: {}".format(len(traindata), len(valid.keys())))
 
+def filter_testdata():
+    testdata = []
+    with open("test_data.csv",'r', encoding="utf-8") as input:
+        reader = csv.DictReader(input)
+        for row in reader:
+            raw_date = row["日期"]
+            y, m, d = '','',''
+            temp = ''
+            for char in raw_date:
+                if char == '年':
+                    y = temp
+                    temp = ''
+                elif char == '月':
+                    for k, ch in enumerate(temp):
+                        if ch != '0':
+                            break
+                    m = temp[k:]
+                    if len(m) == 1:
+                        m = '0' + m
+                    temp = ''
+                elif char == '日':
+                    d = temp
+                    temp = ''
+                else:
+                    temp += char
+            date = y+'-'+m+'-'+d
+            company = row["公司"]
+            row = dict(row)
+            row["日期"] = date
+            row["标题"] = row["标题"].replace("\n", " ")
+            row["正文"] = row["正文"].replace("\n", " ")
+            testdata.append(row)
+    # print(traindata[0])
+    
+    outputpath = Path.cwd() / "data" / "testdata(ch).csv"
+    with open(outputpath,"w",encoding='utf-8',newline='') as train:
+        title = ["","日期","公司","代码","正负面","标题","正文"]
+        writer = csv.DictWriter(train, fieldnames=title)
+        train.write("index,date,company,code,P/N,title,news\n")
+        for row in testdata:
+            writer.writerow(row)
+    print("done with filtering test data")
+    print("test data count: {}\nunique company count: {}".format(len(testdata), len(valid.keys())))
+
+
 if __name__ == "__main__":
     Extract_start_end()
-    # Filter_traindata()
+    Filter_traindata()
+    filter_testdata()
     # outlier()
