@@ -37,6 +37,8 @@ https://www.overleaf.com/project/5e97764a82e35b00012cbc12
 
 Next steps:
 
+CNN segmentation
+
 Interpret
 
 questions and test hypothesis
