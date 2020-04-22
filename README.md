@@ -53,4 +53,10 @@ English worse than Chinese?
 
 Segmentation outperforms char-based?
 
+1) sparsity
+
+2) out of vocabulary
+
+3) ooverfitting
+
 
