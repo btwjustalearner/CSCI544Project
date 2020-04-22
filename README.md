@@ -62,3 +62,19 @@ Segmentation outperforms char-based?
 3) overfitting
 
 
+Yan:
+last day nb
+hybrid good models
+
+
+
+Haomeng:
+CNN seg
+char-based > seg?
+
+Keyu:
+fast char-based
+
+Zhean:
+
+
