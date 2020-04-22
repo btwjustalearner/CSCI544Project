@@ -31,3 +31,60 @@ new NLP models
 
 poster:
 https://www.overleaf.com/project/5e97764a82e35b00012cbc12
+
+
+4/21
+
+Next steps:
+
+CNN segmentation
+
+Interpret
+
+questions and test hypothesis
+
+hybrid good models only
+
+English worse than Chinese?
+
+1) Different market
+
+2) news sampling
+
+3) news length
+
+Segmentation outperforms char-based?
+
+1) sparsity
+
+2) out of vocabulary
+
+3) overfitting
+
+
+Yan:
+
+last day nb
+
+hybrid good models
+
+
+Haomeng:
+
+CNN seg
+
+ZH > EN?
+
+
+Keyu:
+
+fast char-based
+
+char-based > seg?
+
+
+Zhean:
+
+final report
+
+
