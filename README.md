@@ -45,6 +45,12 @@ questions and test hypothesis
 
 English worse than Chinese?
 
+1) Different market
+
+2) news sampling
+
+3) news length
+
 Segmentation outperforms char-based?
 
 
