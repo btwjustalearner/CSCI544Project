@@ -31,3 +31,18 @@ new NLP models
 
 poster:
 https://www.overleaf.com/project/5e97764a82e35b00012cbc12
+
+
+4/21
+
+Next steps:
+
+Interpret
+
+questions and test hypothesis
+
+English worse than Chinese?
+
+Segmentation outperforms char-based?
+
+
