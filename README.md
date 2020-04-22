@@ -63,18 +63,28 @@ Segmentation outperforms char-based?
 
 
 Yan:
+
 last day nb
+
 hybrid good models
 
+
 Haomeng:
+
 CNN seg
+
 ZH > EN?
 
+
 Keyu:
+
 fast char-based
+
 char-based > seg?
 
+
 Zhean:
+
 final report
 
 
