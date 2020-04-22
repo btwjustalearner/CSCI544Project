@@ -59,6 +59,6 @@ Segmentation outperforms char-based?
 
 2) out of vocabulary
 
-3) ooverfitting
+3) overfitting
 
 
