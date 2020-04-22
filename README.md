@@ -43,6 +43,8 @@ Interpret
 
 questions and test hypothesis
 
+hybrid good models only
+
 English worse than Chinese?
 
 1) Different market
