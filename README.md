@@ -64,7 +64,7 @@ Segmentation outperforms char-based?
 
 Yan:
 
-last day nb
+nb with random 01
 
 hybrid good models
 
