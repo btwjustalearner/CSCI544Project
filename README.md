@@ -55,6 +55,8 @@ English worse than Chinese?
 
 Segmentation outperforms char-based?
 
+Only true for naive bayes?
+
 1) sparsity
 
 2) out of vocabulary
