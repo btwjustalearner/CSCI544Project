@@ -72,7 +72,9 @@ nb with random 01
 
 hybrid good models
 
-ZH: LR(nbseg+cnnnoseg) f1 0.767
+ZH: LR(nbseg+cnnnoseg) f1 0.767 coef: [1.48158467, 0.67093084]
+
+EN: LR(nbseg+cnn) f1 0.643 coef: [0.73046022, 0.28719831]
 
 
 Haomeng:
