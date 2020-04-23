@@ -68,7 +68,11 @@ Yan:
 
 nb with random 01
 
+0.5 f1
+
 hybrid good models
+
+ZH: LR(nbseg+cnnnoseg) f1 0.767
 
 
 Haomeng:
