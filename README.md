@@ -63,6 +63,8 @@ Only true for naive bayes?
 
 3) overfitting
 
+NB outperforms CNN?
+
 
 Yan:
 
