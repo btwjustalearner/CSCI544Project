@@ -78,6 +78,9 @@ ZH: LR(nbseg+cnnnoseg) f1 0.767 coef: [1.48158467, 0.67093084]
 
 EN: LR(nbseg+cnn) f1 0.643 coef: [0.73046022, 0.28719831]
 
+ZH: LR(nbseg+fasttext) f1 0.753 coef: [0.97050265, 1.63139597]
+
+EN: LR(nbseg+fasttext) f1 0.626 coef: [ 0.97564551, -0.19412174]
 
 Haomeng:
 
