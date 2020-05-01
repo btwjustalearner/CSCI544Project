@@ -8,6 +8,8 @@ Paper presentation slides: https://docs.google.com/presentation/d/1FTTzCuCzrpE6R
 
 English news zip file: https://drive.google.com/file/d/1rD3AL7AYAHanqIO7G2Kgn9ByuQLBEHJR/view?usp=sharing
 
+Final report: https://www.overleaf.com/project/5ea4f006dceffc0001b99e40
+
 
 
 4/7 meeting:
